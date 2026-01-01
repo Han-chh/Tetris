@@ -16,18 +16,11 @@
 
 - Java开发工具包（JDK）8或更高版本
 
-## 安装和运行
+## 运行
 
-1. 确保系统上安装了JDK。
-2. 导航到项目目录。
-3. 编译源代码：
-   ```
-   javac -d bin src/Tetris/*.java
-   ```
-4. 运行游戏：
-   ```
-   java -cp bin Tetris.Game
-   ```
+```bash
+java -jar Tetris.jar
+```
 
 ## 如何玩
 

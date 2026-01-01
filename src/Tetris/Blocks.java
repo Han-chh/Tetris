@@ -12,7 +12,7 @@ public class Blocks implements Runnable{
 	
 	@Override
 	public void run() {
-		// TODO �Զ����ɵķ������?
+		// TODO Auto-generated method stub
 		ProcessControl.isPause = false;
 		move();
 	}

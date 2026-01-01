@@ -5,7 +5,7 @@ import javax.swing.SwingConstants;
 public class Game {
 	
 	public static Window Win;// main
-	public static int Score = 0; //����
+	public static int Score = 0;
 	public static float timer = 0;
 	public static MapGrid[][] whole_Map = new MapGrid[20][10]; 
 	public static Blocks main_blocks;
