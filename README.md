@@ -17,6 +17,7 @@ A classic Tetris game implemented in Java using Swing. Features falling blocks, 
 ## Requirements
 
 - Java Development Kit (JDK) 8 or higher
+- The jar package is packaged with Java 25.
 
 ## Run
 
