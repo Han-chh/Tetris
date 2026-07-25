@@ -1,60 +1,48 @@
 # Tetris
 
-## Description
+A complete Java desktop Tetris loop with falling pieces, movement, rotation, line clearing, score, timing, difficulty, and next-piece preview.
 
-A classic Tetris game implemented in Java using Swing. Features falling blocks, line clearing, scoring, and multiple difficulty levels.
+[中文说明](README_zh.md)
+
+## Overview
+
+The project models tetromino generation and transformation on a grid, validates movement and rotation against boundaries and landed blocks, clears completed rows, and coordinates score, timer, pause, restart, and difficulty state.
+
+## Demo
+
+![Animated Tetris walkthrough showing falling pieces, movement, rotation, pause, and restart](assets/visual-demos/tetris-falling-blocks.gif)
+
+[Full-resolution MP4 demo](assets/visual-demos/tetris-falling-blocks.mp4)
+
+The video is recorded directly from the native Swing application and covers speed selection, start, movement, rotation, soft drop, next-piece preview, pause, restart, timing, and game-over state.
+
+## Screenshot
+
+![A Tetris playfield with a falling purple piece, landed blocks, score, and next-piece preview](assets/screenshots/tetris-gameplay.png)
 
 ## Features
 
-- Classic Tetris gameplay
-- Multiple difficulty levels (Turtle, Normal, Fast, Increasing)
-- Score tracking
-- Time display
-- Next block preview
-- Pause and restart functionality
-- Keyboard controls for block movement and rotation
+- Falling tetrominoes with left/right/down movement
+- Rotation and collision checks
+- Completed-row clearing
+- Score and elapsed-time feedback
+- Difficulty choices
+- Pause, restart, and next-piece preview
 
-## Requirements
+## Controls
 
-- Java Development Kit (JDK) 8 or higher
-- The jar package is packaged with Java 25.
+- Move: Left/Right or A/D
+- Soft drop: Down or S
+- Rotate: Up or W
 
 ## Run
+
+The committed JAR was verified with Java 25:
 
 ```bash
 java -jar Tetris.jar
 ```
 
-## How to Play
+## Current limitations
 
-- Use A/D or Left/Right arrows to move blocks horizontally
-- Use S or Down arrow to accelerate block fall
-- Use W or Up arrow to rotate blocks (except O-shape)
-- Clear complete lines to score points
-- Game ends when blocks reach the top
-
-## Controls
-
-- START: Begin the game
-- PAUSE/CONTINUE: Pause or resume gameplay
-- RESTART: Start a new game
-- A/Left: Move left
-- D/Right: Move right
-- S/Down: Accelerate
-- W/Up: Rotate
-
-## Project Structure
-
-- `src/Tetris/Game.java`: Main game logic and initialization
-- `src/Tetris/Window.java`: Main game window and controls
-- `src/Tetris/Blocks.java`: Block shapes and movement logic
-- `src/Tetris/Map_grid.java`: Game grid component
-- `src/Tetris/ProcessControl.java`: Game flow control
-- `src/Tetris/Shapes.java`: Block shape definitions
-- `src/Tetris/Timer_game.java`: Game timing
-- `src/Tetris/Refresh.java`: Display refresh logic
-- `bin/`: Compiled class files
-
-## Contributing
-
-Contributions are welcome! Feel free to submit issues and pull requests for new features or improvements.
+No deterministic piece seed or automated gameplay test is included.
